@@ -5,7 +5,6 @@ int main() {
     int *m, *c;
     int n = 5;
 
-    // malloc
     m = (int*)malloc(n * sizeof(int));
     printf("malloc values:\n");
     for(int i = 0; i < n; i++) {
@@ -13,7 +12,6 @@ int main() {
         printf("%d ", m[i]);
     }
 
-    // calloc
     c = (int*)calloc(n, sizeof(int));
     printf("\ncalloc values:\n");
     for(int i = 0; i < n; i++) {
